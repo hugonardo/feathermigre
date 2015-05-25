@@ -1,0 +1,67 @@
+# Mac OSx
+.*.swp
+._*
+.DS_Store
+
+# Code versioner
+.hg
+.lock-wscript
+.svn
+.wafpickle-*
+CVS
+
+# Eclipse
+.project
+.classpath
+.settings
+build
+
+# built application files
+*.apk
+*.ap_
+
+# files for the dex VM
+*.dex
+
+# Java class files
+*.class
+
+# generated files
+bin/
+gen/
+out/
+build/
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Eclipse project files
+.classpath
+.project
+
+# Windows thumbnail db
+thumbs.db
+
+# IDEA/Android Studio project files, because
+# the project can be imported from settings.gradle
+.idea
+*.iml
+
+# Old-style IDEA project files
+*.ipr
+*.iws
+
+# Local IDEA workspace
+.idea/workspace.xml
+
+# Gradle cache
+.gradle
+
+#Maven
+target
+release.properties
+pom.xml.*
+
+# Sandbox stuff
+_sandbox
+

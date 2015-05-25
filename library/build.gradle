@@ -1,0 +1,40 @@
+apply plugin: 'com.android.library'
+apply plugin: 'bintray-release'
+
+def libVersion = '0.0.1'
+
+android {
+	compileSdkVersion 22
+	buildToolsVersion '22.0.1'
+
+	defaultConfig {
+		minSdkVersion 3
+		targetSdkVersion 22
+		versionCode 1
+		versionName libVersion
+	}
+	buildTypes {
+		release {
+			minifyEnabled false
+			proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+		}
+	}
+}
+
+dependencies {
+	compile 'commons-io:commons-io:2.4'
+}
+
+publish {
+	userOrg 'hugonardo'
+	groupId 'net.hugonardo'
+	artifactId 'feathermigre'
+	version libVersion
+	licences = ['MIT']
+	description 'Android SQLite migrations light as a feather.'
+	website 'https://github.com/hugonardo/feathermigre'
+	issueTracker "${website}/issues"
+	repository "${website}.git"
+	bintrayUser bintray_user
+	bintrayKey bintray_apikey
+}
