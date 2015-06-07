@@ -19,7 +19,7 @@ public class FeatherDatabase extends SQLiteOpenHelper {
 
 	@Override
 	public void onCreate(SQLiteDatabase db) {
-		mFeathermigre.createDatabase(db, 1, ManifestMetadata.getDbName(mContext));
+		mFeathermigre.createDatabase(db, ManifestMetadata.getDbVersion(mContext), ManifestMetadata.getDbName(mContext));
 	}
 
 	@Override
