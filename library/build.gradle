@@ -4,12 +4,12 @@ apply plugin: 'bintray-release'
 def libVersion = '0.1.0-SNAPSHOT'
 
 android {
-	compileSdkVersion 22
-	buildToolsVersion '22.0.1'
+	compileSdkVersion 23
+	buildToolsVersion '24.0.0'
 
 	defaultConfig {
 		minSdkVersion 3
-		targetSdkVersion 22
+		targetSdkVersion 23
 		versionCode 1
 		versionName libVersion
 	}
