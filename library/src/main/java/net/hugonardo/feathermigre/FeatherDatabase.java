@@ -28,7 +28,7 @@ public class FeatherDatabase extends SQLiteOpenHelper {
 	}
 
 	public static void deleteDatabase(Context context) {
-		context.deleteDatabase(ManifestMetadata.getDbName(context));
+		context.deleteDatabase(ManifestMetadata.getDbName(context) + DB_FILE_EXTENSION);
 	}
 
 }
